@@ -12,8 +12,8 @@ provider "aws" {
 }
 
 locals {
-  github-repo = "https://github.com/MiranaSGit/DevOps_Phonebook-Application.git"
-  github-file-url = "https://raw.githubusercontent.com/MiranaSGit/DevOps_Phonebook-Application/master/"
+  github-repo = "https://github.com/kocagozhkn/DevOps_Project_04-Phonebook-Application-with-DockerSwarm.git"
+  github-file-url = "https://raw.githubusercontent.com/kocagozhkn/DevOps_Project_04-Phonebook-Application-with-DockerSwarm/main/"
 }
 
 data "aws_caller_identity" "current" {}
