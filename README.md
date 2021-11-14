@@ -1,10 +1,12 @@
-# Docker Swarm Deployment of Phonebook Application (Python Flask) with MySQL
+# Project-204: Docker Swarm Deployment of Phonebook Application (Python Flask) with MySQL
 
 ## Description
 
 This project aims to deploy the Phonebook Application web application with Docker Swarm on Elastic Compute Cloud (EC2) Instances by pulling the app images from the AWS Elastic Container Registry (ECR) repository.
 
 ## Problem Statement
+
+![Project_204](project-204.png)
 
 - Your company has recently started a project that aims to serve as phonebook web application. Your teammates have started to work on the project and developed the UI and backend part of the project and they need your help to deploy the app in development environment.
 
@@ -87,20 +89,25 @@ This project aims to deploy the Phonebook Application web application with Docke
 ## Project Skeleton
 
 ```text
-DevOps_Phonebook-Application (folder)
+204-docker-swarm-deployment-of-phonebook-app-on-python-flask-mysql (folder)
 |
-|----readme.md            # Definition of the project
-|----phonebook-app.py     # Python Flask Web Application
-|----requirements.txt     # List of Flask Modules/Packages
-|----init.sql             # SQL statements to initialize db
-|----main.tf              # Terraform configuration file
-|----Dockerfile           # 
-|----docker-compose.yml   # 
+|----readme.md            # Given to the students (Definition of the project)
+|----cfn-template.yml     # To be delivered by students (Cloudformation template-Optional)
+|----phonebook-app.py     # Given to the students (Python Flask Web Application)
+|----requirements.txt     # Given to the students (List of Flask Modules/Packages)
+|----init.sql             # Given to the students (SQL statements to initialize db)
+|----main.tf              # To be delivered by students (Terraform configuration file)
+|----Dockerfile           # To be delivered by students
+|----docker-compose.yml   # To be delivered by students
 |----templates
-        |----index.html      # HTML template
-        |----add-update.html # HTML template
-        |----delete.html     # HTML template
+        |----index.html      # Given to the students (HTML template)
+        |----add-update.html # Given to the students (HTML template)
+        |----delete.html     # Given to the students (HTML template)
 ```
+
+## Expected Outcome
+
+![Phonebook App Search Page](./search-snapshot.png)
 
 ### At the end of the project, following topics are to be covered;
 
@@ -121,6 +128,26 @@ DevOps_Phonebook-Application (folder)
 - Terraform Configuration File
 
 - Git & Github for Version Control System
+
+### At the end of the project, students will be able to;
+
+- demonstrate how to configure Dockerfile and docker-compose files.
+
+- set up a Docker Swarm cluster to work with AWS ECR using Terraform.
+
+- deploy an application stack on Docker Swarm.
+
+- create and configure AWS ECR from the AWS CLI.
+
+- use Docker commands effectively to tag, push, and pull images to/from ECR.
+
+- demonstrate bash scripting skills using `user data` section in Terraform to install and setup Docker and application environment on EC2 Instances.
+
+- demonstrate their configuration skills of AWS EC2, IAM Policy, Role, Instance Profile, and Security Group.
+
+- configure Terraform template to use AWS Resources.
+
+- apply git commands (push, pull, commit, add etc.) and Github as Version Control System.
 
 ## Resources
 
